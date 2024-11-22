@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../transcribe"
+		},
+		{
+			"path": "../spotlight-ts"
+		}
+	],
+	"settings": {}
+}
