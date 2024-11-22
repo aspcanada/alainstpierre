@@ -11,7 +11,7 @@ import {
   XIcon,
   FacebookIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from '@/images/portrait.jpeg'
 
 function SocialLink({
   className,
@@ -102,6 +102,11 @@ export default function About() {
               problem-solving I discovered as a kid—only now, the forts are in
               the cloud.
             </p>
+            <p>
+              At home, I’m a proud husband and father of four energetic boys.
+              They remind me daily of the importance of curiosity, creativity,
+              and always looking for the next adventure
+            </p>
           </div>
         </div>
         <div className="lg:pl-20">
@@ -127,7 +132,7 @@ export default function About() {
               Follow on GitHub
             </SocialLink>
             <SocialLink
-              href="http://www.linkedin.com/in/aspcanada"
+              href="https://www.linkedin.com/in/aspcanada"
               icon={LinkedInIcon}
               className="mt-4"
             >

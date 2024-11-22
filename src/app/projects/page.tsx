@@ -8,8 +8,16 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoInvestDirect from '@/images/logos/invest-direct.png'
 
 const projects = [
+  {
+    name: 'InvestDirect',
+    description:
+      'A platform connecting real estate entrepreneurs with private investors in Canada, streamlining investment opportunities.',
+    link: { href: '/projects/invest-direct', label: 'View Case Study' },
+    logo: logoInvestDirect,
+  },
   {
     name: 'Planetaria',
     description:

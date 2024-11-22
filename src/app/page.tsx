@@ -9,12 +9,12 @@ import {
   GitHubIcon,
   InstagramIcon,
   LinkedInIcon,
-  XIcon,
+  FacebookIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoSTA from '@/images/logos/sta.png'
+import logoSparkgeo from '@/images/logos/sparkgeo.jpeg'
+import logoTDAmeritrade from '@/images/logos/td_ameritrade.jpeg'
+import logoInvestools from '@/images/logos/investools.jpeg'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -187,35 +187,35 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'St Avant Capital',
+      title: 'President',
+      logo: logoSTA,
+      start: '2023',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product Designer',
-      logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      company: 'Sparkgeo',
+      title: 'Senior Software Architect',
+      logo: logoSparkgeo,
+      start: '2015',
+      end: '2023',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
+      company: 'TD Ameritrade',
+      title: 'Senior Software Engineer',
+      logo: logoTDAmeritrade,
+      start: '2009',
+      end: '2015',
     },
     {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Investools',
+      title: 'ETL Developer',
+      logo: logoInvestools,
+      start: '2005',
+      end: '2009',
     },
   ]
 
@@ -273,7 +273,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Software designer, founder, and amateur astronaut.
+            AI Specialist, Cloud Architect, and Curious Creator.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Alain, an AI & Cloud Solutions Expert based on Vancouver Island.
@@ -281,19 +281,23 @@ export default async function Home() {
             challenges and unlock their potential in the cloud.
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink href="#" aria-label="Follow on X" icon={XIcon} />
+            {/* <SocialLink href="#" aria-label="Follow on X" icon={XIcon} /> */}
             <SocialLink
-              href="#"
+              href="https://www.facebook.com/alain.j.stpierre"
+              icon={FacebookIcon}
+            ></SocialLink>
+            <SocialLink
+              href="https://www.instagram.com/aspcanada/"
               aria-label="Follow on Instagram"
               icon={InstagramIcon}
             />
             <SocialLink
-              href="#"
+              href="https://github.com/aspcanada"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="#"
+              href="https://www.linkedin.com/in/aspcanada"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
