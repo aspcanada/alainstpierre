@@ -51,7 +51,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Alain St. Pierre. I live on Vancouver Island, where I harness AI and the cloud to shape smarter businesses.',
+    "I'm Alain St. Pierre. I live on Vancouver Island, where I harness AI and the cloud to shape smarter businesses.",
 }
 
 export default function About() {
@@ -70,15 +70,15 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Alain St. Pierre. I live on Vancouver Island, where I harness AI
-            and the cloud to shape smarter businesses.
+            I&apos;m Alain St. Pierre. I live on Vancouver Island, where I
+            harness AI and the cloud to shape smarter businesses.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve always been a builder at heart. Growing up in the woods of
-              Northern BC in the 1980s, I spent my days crafting elaborate forts
-              from fallen branches, dreaming up entire worlds in the forest
-              behind our house.
+              I&apos;ve always been a builder at heart. Growing up in the woods
+              of Northern BC in the 1980s, I spent my days crafting elaborate
+              forts from fallen branches, dreaming up entire worlds in the
+              forest behind our house.
             </p>
             <p>
               When I was 14, everything changed. It was 1990, and my parents
@@ -91,21 +91,21 @@ export default function About() {
             <p>
               The only thing I loved more than technology was solving problems.
               In school, math and science were my favorite playgrounds, places
-              where logic and creativity came together. When I wasn’t outside
-              exploring or inside at my keyboard, I was dreaming about what I
-              could make next.
+              where logic and creativity came together. When I wasn&apos;t
+              outside exploring or inside at my keyboard, I was dreaming about
+              what I could make next.
             </p>
             <p>
               Today, I bring that same curiosity and drive to my work as an AI &
               Cloud Solutions Expert, helping businesses leverage technology to
-              tackle big challenges. It’s the same joy of building and
+              tackle big challenges. It&apos;s the same joy of building and
               problem-solving I discovered as a kid—only now, the forts are in
               the cloud.
             </p>
             <p>
-              At home, I’m a proud husband and father of four energetic boys.
-              They remind me daily of the importance of curiosity, creativity,
-              and always looking for the next adventure
+              At home, I&apos;m a proud husband and father of four energetic
+              boys. They remind me daily of the importance of curiosity,
+              creativity, and always looking for the next adventure.
             </p>
           </div>
         </div>
