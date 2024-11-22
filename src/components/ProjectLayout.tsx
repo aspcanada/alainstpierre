@@ -1,6 +1,6 @@
 'use client'
 
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 
@@ -31,6 +31,10 @@ export function ProjectLayout({
 }) {
   let router = useRouter()
   let { previousPathname } = useContext(AppContext)
+
+  useEffect(() => {
+    document.title = `Case Study: ${project.name}`
+  }, [project.name])
 
   return (
     <Container className="mt-16 lg:mt-32">

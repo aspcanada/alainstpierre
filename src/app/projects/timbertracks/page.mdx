@@ -1,0 +1,59 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import logoTimberTracks from '@/images/logos/timber-tracks.png'
+
+export const project = {
+  name: 'TimberTracks',
+  description: 'A Progressive Web App for forestry operations enabling offline data collection and seamless synchronization.',
+  logo: logoTimberTracks,
+  title: 'Forestry Operations Management Platform',
+}
+
+export const metadata = {
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+## Overview
+
+TimberTracks.ca is a comprehensive platform designed to streamline forestry operations and data management. The platform focuses on delivering a user-friendly, mobile-first solution that works seamlessly both online and offline, addressing the unique challenges faced by forestry professionals in remote areas.
+
+## The Challenge
+
+Forestry professionals frequently work in remote locations with limited or no internet connectivity. The primary challenge was developing a Progressive Web App (PWA) that would enable offline data collection while ensuring reliable synchronization with the server once connectivity was restored.
+
+## Solution
+
+The platform leverages modern technologies and innovative approaches to deliver a robust solution for forestry operations.
+
+### Core Features
+- Offline-First Functionality: Complete data collection and management capabilities without internet connection
+- Seamless Synchronization: Automatic data sync when connectivity is restored
+- Mobile-First Design: Responsive interface optimized for tablets and smartphones
+- Secure Data Storage: Reliable cloud-based storage with AWS S3
+- REST API Integration: Robust backend services for efficient data handling
+
+### Tech Stack
+- Backend: Python, Django, Django Rest Framework (DRF)
+- Infrastructure: Docker, AWS Elastic Beanstalk, S3
+- Frontend: HTML, CSS with mobile-first approach
+- Progressive Web App (PWA) implementation for offline capabilities
+
+## Key Outcomes
+- Enhanced Field Operations: Workers can collect and manage data without connectivity constraints
+- Data Integrity: Zero data loss through robust synchronization mechanisms
+- Scalable Solution: Cloud infrastructure supporting growing user demands
+- Improved Efficiency: Streamlined workflows for forestry professionals
+
+## Personal Contribution
+
+As the full-stack developer, I:
+- Architected and developed the entire application stack
+- Implemented the offline-first PWA functionality
+- Created a comprehensive REST API using Django Rest Framework
+- Managed AWS infrastructure and Docker deployment
+- Designed and implemented the mobile-first user interface
+
+## Conclusion
+
+TimberTracks.ca showcases the power of modern web technologies in solving real-world industry challenges. By combining offline capabilities with cloud infrastructure, the platform delivers a reliable solution for forestry operations management, demonstrating expertise in full-stack development and cloud architecture.
