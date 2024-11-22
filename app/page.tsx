@@ -1,8 +1,8 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import profilePic from './images/profile.jpg'
-import { FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
-import bgImage from './images/bg.jpg'
+import Image from "next/image";
+import Link from "next/link";
+import profilePic from "./images/profile.jpg";
+import { FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
+import bgImage from "./images/bg.jpg";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         priority
       />
       <div className="absolute inset-0 bg-black/50 z-10" />
-      
+
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-md w-full text-center relative z-20">
         {/* Profile Section */}
         <div className="mb-6">
@@ -34,19 +34,28 @@ export default function Home() {
 
         {/* Social Links */}
         <div className="flex justify-center space-x-6 mb-6">
-          <Link href="https://www.instagram.com/aspcanada/" className="text-gray-700 hover:text-gray-900 text-2xl">
+          <Link
+            href="https://www.instagram.com/aspcanada/"
+            className="text-gray-700 hover:text-gray-900 text-2xl"
+          >
             <FaInstagram />
           </Link>
-          <Link href="https://www.facebook.com/alain.j.stpierre" className="text-blue-400 hover:text-blue-600 text-2xl">
+          <Link
+            href="https://www.facebook.com/alain.j.stpierre"
+            className="text-blue-400 hover:text-blue-600 text-2xl"
+          >
             <FaFacebook />
           </Link>
-          <Link href="http://www.linkedin.com/in/aspcanada" className="text-blue-500 hover:text-blue-700 text-2xl">
+          <Link
+            href="http://www.linkedin.com/in/aspcanada"
+            className="text-blue-500 hover:text-blue-700 text-2xl"
+          >
             <FaLinkedin />
           </Link>
         </div>
 
         {/* HubSpot Embed Code */}
-        <script
+        {/* <script
           type="text/javascript"
           id="hs-script-loader"
           async
@@ -64,7 +73,7 @@ export default function Home() {
               }
             `
           }}
-        />
+        /> */}
 
         {/* About Section */}
         {/* <div className="text-left">
@@ -76,5 +85,5 @@ export default function Home() {
         </div> */}
       </div>
     </main>
-  )
+  );
 }
