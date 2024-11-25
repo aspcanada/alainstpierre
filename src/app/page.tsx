@@ -272,7 +272,7 @@ function Photos() {
 
 export default async function Home() {
   // let articles = (await getAllArticles()).slice(0, 4)
-  let projects = (await getAllProjects()).slice(0, 4)
+  let projects = (await getAllProjects()).slice(0, 3)
   return (
     <>
       <Container className="mt-9">

@@ -31,5 +31,7 @@ export async function getAllProjects() {
   })
 
   let projects = await Promise.all(projectFilenames.map(importProject))
-  return projects
+  
+  // return sorted list by filename (this way I can control what order is displayed via numeric prefixes)
+  return projects.sort((a, b) => a.slug.localeCompare(b.slug))
 } 
