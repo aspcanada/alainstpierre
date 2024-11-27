@@ -1,0 +1,69 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import logoInvestools from '@/images/logos/investools.jpeg'
+
+export const project = {
+  name: "Custom ETL Solution at TD Ameritrade",
+  description: "Developed a custom ETL scheduling system that processed terabytes of financial data daily, enabling users to analyze financial markets and receive timely alerts for investment decisions.",
+  logo: logoInvestools,
+  title: "ETL Scheduling System",
+}
+
+export const metadata = {
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+## Overview
+
+At Investools (now TD Ameritrade), I developed a custom ETL scheduling system that processed terabytes of financial data daily. This solution supported key platform functionalities, enabling users to analyze financial markets and receive timely alerts for investment decisions.
+
+## The Challenge
+
+Investools needed a robust and efficient ETL system to handle complex workflows and massive data volumes across diverse financial instruments. Challenges included:
+- Processing terabytes of data from multiple sources.
+- Managing 200+ interdependent tasks with fan-in/fan-out dependencies.
+- Ensuring precise timing for data ingestion, processing, and calculations.
+
+## The Solution
+
+I designed and implemented an ETL scheduling system that processed, analyzed, and delivered critical financial data, including:
+
+### Data Sources:
+- Integrated feeds from Thomson Reuters and Morningstar.
+- Handled corporate actions such as mergers, splits, and symbol changes.
+- Ingested data from FTP servers and APIs.
+
+### Indicators and Analytics:
+- Calculated advanced indicators like Greeks and Black-Scholes.
+- Supported end-of-day and intraday computations for price movements and technical analysis (e.g., MACD, moving averages, stochastics).
+
+### Alerts and Insights:
+- Delivered real-time alerts for earnings calendars, news, price breakouts, and technical thresholds.
+- Powered “ProSearch” scans for users to identify price breakouts and other actionable events.
+
+### Workflow Management:
+- Managed 200+ tasks with fan-in/fan-out dependencies, ensuring timely execution and data availability.
+
+### ETL Maintenance:
+- Provided ongoing support, including on-call pager duty, to ensure system reliability and uptime.
+
+## Tech Stack
+- **Programming Languages:** Java, SQL
+- **Data Sources:** FTP servers, APIs
+- **Indicators:** Greeks, Black-Scholes, technical analysis tools
+
+## Key Outcomes
+- **Efficient Data Processing:** Streamlined the ingestion and processing of terabytes of data daily.
+- **User Empowerment:** Enabled investors to make informed decisions with real-time alerts and advanced scanning tools.
+- **Scalable Solution:** Designed an ETL system capable of scaling with increasing data loads and user demands.
+- **Reliability:** Maintained high system uptime through rigorous ETL maintenance and support.
+
+## Personal Contribution
+- Designed and implemented the custom ETL system, including workflow management and task dependencies.
+- Integrated diverse data feeds and ensured accurate processing of complex financial instruments.
+- Supported user-facing features like real-time alerts and ProSearch.
+- Maintained the system’s performance with on-call ETL troubleshooting.
+
+## Conclusion
+This project showcases my expertise in backend development, data engineering, and financial technology. It highlights my ability to create scalable, efficient systems that handle complex workflows and large data volumes, directly impacting user experience and platform performance. 
