@@ -81,25 +81,21 @@ export function ProjectLayout({
             </button>
           )}
           <div className="mt-10">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <div className="h-10 w-10">
-                  <Image
-                    src={project.logo}
-                    alt={project.title}
-                    className="rounded-full"
-                    width={40}
-                    height={40}
-                  />
-                </div>
-                <div className="ml-4">
-                  <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                    {project.name}
-                  </h1>
-                  <div className="mt-1 text-zinc-500">
-                    {project.description}
-                  </div>
-                </div>
+            <div className="flex flex-col items-center">
+              <div className="h-16 w-16">
+                <Image
+                  src={project.logo}
+                  alt={project.title}
+                  className="rounded-full"
+                  width={64}
+                  height={64}
+                />
+              </div>
+              <div className="ml-4 text-center">
+                <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+                  {project.name}
+                </h1>
+                <div className="mt-1 text-zinc-500">{project.description}</div>
               </div>
             </div>
 

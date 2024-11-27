@@ -1,0 +1,64 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import logoMaptiks from '@/images/logos/maptiks.png'
+
+export const project = {
+  name: "Maptiks - Transforming Web Map Analytics",
+  description: "Contributed to Maptiks, a SaaS platform providing actionable analytics for web maps, enhancing scalability, user experience, and adaptability for enterprise and military use cases.",
+  logo: logoMaptiks,
+  title: "Web Map Analytics Platform",
+}
+
+export const metadata = {
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+## Overview
+
+Maptiks is a SaaS platform designed to provide web map owners with actionable analytics, offering insights into user interactions such as map loads, load times, clicks, pans, zooms, and layer engagement. Often described as “Google Analytics for web maps,” Maptiks integrates seamlessly with industry-standard mapping tools like Mapbox, Google Maps, Esri, AGOL, LeafletJS, OpenLayers, and Mango.
+
+During my time at Sparkgeo, I contributed extensively to both Maptiks 2.0 and 3.0, driving advancements in scalability, cost-efficiency, user experience, and adaptability for enterprise and military use cases.
+
+## Challenges
+
+The platform faced several challenges:
+- Providing real-time, detailed analytics for map-specific interactions that traditional tools couldn’t capture.
+- Scaling the system to handle growing user demand while optimizing costs.
+- Adapting the platform to meet the needs of enterprise and military clients, including offline and on-premise deployments.
+
+## Solutions and Contributions
+
+### Maptiks 2.0: Scalable Cloud Analytics
+- **Full-Stack Development:**
+  - Redesigned the frontend with an AngularJS web app and a client-side JavaScript library to enable seamless integration with clients’ websites.
+  - Enhanced the backend with Django Rest Framework and Sanic for high-performance APIs.
+  
+- **Cloud Optimization:**
+  - Led a cloud migration that reduced infrastructure costs by 75% and increased throughput by 120x, ensuring the system could handle significantly more concurrent users.
+  
+- **Key Features:**
+  - Delivered analytics for map-specific metrics, such as clicks, zooms, and panning behaviors, via intuitive dashboards.
+  - Supported integrations with major mapping libraries, making it a versatile tool for diverse industries.
+
+### Maptiks 3.0: Enterprise and Military Solutions
+- **Modernized UX/UI:**
+  - Designed and implemented a new React-based frontend, offering a more intuitive and modern interface for users.
+  
+- **Backend Overhaul:**
+  - Migrated the backend to the ELK (Elasticsearch, Logstash, Kibana) stack, reducing data ingestion costs while enhancing scalability and data visualization.
+  
+- **Enterprise Deployments:**
+  - Enabled on-premise and self-hosted deployment options, giving enterprise clients greater control over their data and security.
+  
+- **Military Applications:**
+  - Developed an air-gapped version of Maptiks for offline use, tailored for secure military environments.
+
+## Key Outcomes
+- **Scalability:** Achieved a 120x increase in throughput and significant cost savings, enabling the platform to support high-traffic scenarios.
+- **Enhanced User Experience:** Delivered a modern, user-friendly interface with advanced visualization tools.
+- **Broader Market Reach:** Expanded the platform’s applicability to enterprise and military clients through on-prem and air-gapped solutions.
+- **Cost Efficiency:** Optimized infrastructure to reduce operating costs without compromising performance.
+
+## Conclusion
+My work on Maptiks demonstrates my ability to drive innovation in SaaS platforms, balancing technical excellence with user-centric design. By modernizing the platform, optimizing performance, and addressing diverse client needs, I contributed to making Maptiks a leading tool for web map analytics across industries. 
