@@ -76,7 +76,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
         },
         p: {
           marginTop: theme('spacing.7'),
-          marginBottom: theme('spacing.7'),
+          marginBottom: theme('spacing.0'),
         },
 
         // Headings
@@ -87,14 +87,14 @@ export default function typographyStyles({ theme }: PluginUtils) {
         h2: {
           fontSize: theme('fontSize.xl')[0],
           lineHeight: theme('lineHeight.7'),
-          marginTop: theme('spacing.20'),
-          marginBottom: theme('spacing.4'),
+          // marginTop: theme('spacing.20'),
+          marginBottom: theme('spacing.1'),
         },
         h3: {
           fontSize: theme('fontSize.base')[0],
           lineHeight: theme('lineHeight.7'),
-          marginTop: theme('spacing.16'),
-          marginBottom: theme('spacing.4'),
+          // marginTop: theme('spacing.16'),
+          marginBottom: theme('spacing.1'),
         },
         ':is(h2, h3) + *': {
           marginTop: 0,
@@ -162,6 +162,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
         // Lists
         ul: {
           listStyleType: 'disc',
+          marginTop: theme('spacing.0'), // Add this line to control space before <ul>
         },
         ol: {
           listStyleType: 'decimal',
@@ -170,9 +171,9 @@ export default function typographyStyles({ theme }: PluginUtils) {
           paddingLeft: theme('spacing.6'),
         },
         li: {
-          marginTop: theme('spacing.6'),
-          marginBottom: theme('spacing.6'),
-          paddingLeft: theme('spacing[3.5]'),
+          // marginTop: theme('spacing.6'),
+          // marginBottom: theme('spacing.6'),
+          // paddingLeft: theme('spacing[3.5]'),
         },
         'li::marker': {
           fontSize: theme('fontSize.sm')[0],
