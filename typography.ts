@@ -76,7 +76,7 @@ export default function typographyStyles({ theme }: PluginUtils) {
         },
         p: {
           marginTop: theme('spacing.7'),
-          marginBottom: theme('spacing.0'),
+          marginBottom: theme('spacing.7'),
         },
 
         // Headings
@@ -87,13 +87,13 @@ export default function typographyStyles({ theme }: PluginUtils) {
         h2: {
           fontSize: theme('fontSize.xl')[0],
           lineHeight: theme('lineHeight.7'),
-          // marginTop: theme('spacing.20'),
+          marginTop: theme('spacing.10'),
           marginBottom: theme('spacing.1'),
         },
         h3: {
           fontSize: theme('fontSize.base')[0],
           lineHeight: theme('lineHeight.7'),
-          // marginTop: theme('spacing.16'),
+          marginTop: theme('spacing.8'),
           marginBottom: theme('spacing.1'),
         },
         ':is(h2, h3) + *': {
