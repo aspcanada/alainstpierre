@@ -87,7 +87,7 @@ export default function Services() {
             free up your team to focus on what matters most: growth.
           </p>
           <h3 className="mt-8 font-semibold text-zinc-800 dark:text-zinc-100">
-            Here's How I Can Help:
+            Here&apos;s How I Can Help:
           </h3>
           <ServiceList
             items={[
@@ -97,7 +97,7 @@ export default function Services() {
             ]}
           />
           <p className="mt-6">
-            With smarter systems, you'll see increased productivity, fewer
+            With smarter systems, you&apos;ll see increased productivity, fewer
             errors, and a noticeable boost in profitability.
           </p>
         </ServiceSection>
@@ -109,7 +109,7 @@ export default function Services() {
           isReversed
         >
           <p>
-            The cloud isn't just for big enterprises—it's a game-changer for
+            The cloud isnt just for big enterprises—it&apos;s a game-changer for
             small and medium-sized businesses, too. As an AWS Solutions
             Architect, I help businesses like yours transition to the cloud,
             improve efficiency, reduce costs, and scale with confidence.
@@ -137,11 +137,11 @@ export default function Services() {
         >
           <p>
             Adopting AI and cloud technology can feel overwhelming, but it
-            doesn't have to be. I'll work with you to simplify the process and
-            help you get the most out of these powerful tools.
+            doesn&apos;t have to be. I&apos;ll work with you to simplify the
+            process and help you get the most out of these powerful tools.
           </p>
           <h3 className="mt-8 font-semibold text-zinc-800 dark:text-zinc-100">
-            Here's How I Can Help:
+            Here&apos;s How I Can Help:
           </h3>
           <ServiceList
             items={[
@@ -151,19 +151,20 @@ export default function Services() {
             ]}
           />
           <p className="mt-6">
-            I'll take the complexity out of technology so you can focus on
+            I&apos;ll take the complexity out of technology so you can focus on
             running and growing your business.
           </p>
         </ServiceSection>
 
         <div className="mt-16 border-t border-zinc-100 pt-10 dark:border-zinc-700/40">
           <h2 className="text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
-            Let's Transform Your Business Together
+            Let&apos;s Transform Your Business Together
           </h2>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            If you're ready to unlock the potential of AI and cloud technology,
-            I'd love to help. Reach out today to schedule a consultation and
-            take the first step toward smarter, more efficient operations.
+            If you&apos;re ready to unlock the potential of AI and cloud
+            technology, I&apos;d love to help. Reach out today to schedule a
+            consultation and take the first step toward smarter, more efficient
+            operations.
           </p>
           <div className="mt-8">
             <Button href="mailto:hello@alainstpierre.com">Get Started</Button>
