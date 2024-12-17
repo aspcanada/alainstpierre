@@ -13,7 +13,7 @@ export default async function Projects() {
   return (
     <SimpleLayout
       title="Things I've made trying to put my dent in the universe."
-      intro="I've worked on tons of little projects over the years but these are the ones that I'm most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      intro="Over the years, I've worked on numerous projects, but these are the ones I'm most proud of. While only a few are open-source, feel free to explore the code and contribute if you have ideas for improvements or enhancements."
     >
       <ul
         role="list"
