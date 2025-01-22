@@ -14,6 +14,8 @@ import logoSTA from '@/images/logos/sta.png'
 import logoSparkgeo from '@/images/logos/sparkgeo.jpeg'
 import logoTDAmeritrade from '@/images/logos/td_ameritrade.jpeg'
 import logoInvestools from '@/images/logos/investools.jpeg'
+import awsBadge from '@/images/certifications/aws-certified-solutions-architect-associate.png'
+import empBadge from '@/images/certifications/emp-cert.png'
 import image1 from '@/images/photos/image-1.jpg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -270,6 +272,46 @@ function Photos() {
   )
 }
 
+function Certifications() {
+  return (
+    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+      <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+        <span>Certifications</span>
+      </h2>
+      <div className="mt-6 flex items-center gap-4">
+        <a
+          href="https://www.credly.com/badges/96b28d0a-815e-4077-aa65-42221e108c48/public_url"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-opacity hover:opacity-80"
+        >
+          <Image
+            src={awsBadge}
+            alt="AWS Certification"
+            width={120}
+            height={120}
+            className="rounded-lg"
+          />
+        </a>
+        <a
+          href="https://www.ifse.ca/courselist/exempt-markets-products-course-emp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-opacity hover:opacity-80"
+        >
+          <Image
+            src={empBadge}
+            alt="EMP Certification"
+            width={139}
+            height={98}
+            className="rounded-lg"
+          />
+        </a>
+      </div>
+    </div>
+  )
+}
+
 export default async function Home() {
   // let articles = (await getAllArticles()).slice(0, 4)
   let projects = (await getAllProjects()).slice(0, 3)
@@ -328,6 +370,7 @@ export default async function Home() {
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <Newsletter />
             <Resume />
+            <Certifications />
           </div>
         </div>
       </Container>
