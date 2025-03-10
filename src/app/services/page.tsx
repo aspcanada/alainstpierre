@@ -167,7 +167,9 @@ export default function Services() {
             operations.
           </p>
           <div className="mt-8">
-            <Button href="mailto:hello@alainstpierre.com">Get Started</Button>
+            <Button href="mailto:hello@alainstpierre.com?subject=Welcome! Let’s Unlock the Power of AI & Cloud 🚀&body=Thanks for getting started! I’m excited to help you unlock the power of AI and cloud technology—let’s schedule a consultation and take the first step toward smarter, more efficient operations.">
+              Email Me
+            </Button>
           </div>
         </div>
       </div>

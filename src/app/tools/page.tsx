@@ -80,9 +80,9 @@ export default function Tools() {
             to code.
           </Tool>
           <Tool title="iTerm2">
-            I&apos;m honestly not even sure what features I get with this that
-            aren&apos;t just part of the macOS Terminal but it&apos;s what I
-            use.
+            iTerm2 is a powerful and customizable terminal emulator for macOS 
+            that enhances productivity with features like split panes, search, 
+            autocomplete, and advanced scripting.
           </Tool>
           <Tool title="ChatGPT">
             ChatGPT has become an indispensable part of my workflow, helping me
