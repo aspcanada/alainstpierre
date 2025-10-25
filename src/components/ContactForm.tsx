@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react"
 import { Button } from "@/components/Button"
+import { Turnstile } from "@marsidev/react-turnstile"
 
 type FormStatus = "idle" | "submitting" | "success" | "error"
 
@@ -9,6 +10,7 @@ interface FormData {
   name: string
   email: string
   message: string
+  captchaToken?: string
 }
 
 export function ContactForm() {
@@ -18,10 +20,17 @@ export function ContactForm() {
     email: "",
     message: "",
   })
+  const [captchaToken, setCaptchaToken] = useState<string>("")
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setStatus("submitting")
+
+    // Check if CAPTCHA is completed
+    if (!captchaToken) {
+      setStatus("error")
+      return
+    }
 
     try {
       const response = await fetch("/api/contact", {
@@ -29,7 +38,10 @@ export function ContactForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          captchaToken,
+        }),
       })
 
       const data = await response.json()
@@ -40,6 +52,7 @@ export function ContactForm() {
 
       setStatus("success")
       setFormData({ name: "", email: "", message: "" })
+      setCaptchaToken("")
     } catch (error) {
       setStatus("error")
       console.error("Error submitting form:", error)
@@ -108,9 +121,22 @@ export function ContactForm() {
       </div>
 
       <div>
+        <Turnstile
+          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+          onSuccess={setCaptchaToken}
+          onError={() => setCaptchaToken("")}
+          onExpire={() => setCaptchaToken("")}
+          options={{
+            theme: "auto",
+            size: "normal",
+          }}
+        />
+      </div>
+
+      <div>
         <Button
           type="submit"
-          disabled={status === "submitting"}
+          disabled={status === "submitting" || !captchaToken}
           className="w-full sm:w-auto"
         >
           {status === "submitting" ? "Sending..." : "Send Message"}
@@ -122,7 +148,9 @@ export function ContactForm() {
         )}
         {status === "error" && (
           <p className="mt-4 text-sm text-red-600">
-            An error occurred. Please try again.
+            {!captchaToken 
+              ? "Please complete the CAPTCHA verification." 
+              : "An error occurred. Please try again."}
           </p>
         )}
       </div>
